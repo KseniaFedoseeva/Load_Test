@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\alex\Desktop\IBS_НТ\LR\5 скриптов\Итоговые скрипты\Create users
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\create users\\logfile.log
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\create users\\combined_Create users.c
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\create users\\pre_cci.c

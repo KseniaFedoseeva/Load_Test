@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\alex\Desktop\IBS_НТ\LR\5 скриптов\Итоговые скрипты\UC5_View_Tickets
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\uc5_view_tickets\\logfile.log
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\uc5_view_tickets\\combined_UC5_View_Tickets.c
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\uc5_view_tickets\\pre_cci.c

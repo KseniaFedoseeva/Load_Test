@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\alex\Desktop\IBS_НТ\LR\5 скриптов\Итоговые скрипты\UC1_Buy_ticket_and_view_reserv
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\uc1_buy_ticket_and_view_reserv\\logfile.log
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\uc1_buy_ticket_and_view_reserv\\combined_UC1_Buy_ticket_and_view_reserv.c
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\uc1_buy_ticket_and_view_reserv\\pre_cci.c
