@@ -1,4 +1,4 @@
-# 1 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\350\362\356\343\356\342\373\345 \361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c"
+# 1 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c"
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/lrun.h" 1
  
  
@@ -966,7 +966,7 @@ int lr_db_getvalue(char * pFirstArg, ...);
 
 
 
-# 1 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\350\362\356\343\356\342\373\345 \361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
+# 1 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
 
 # 1 "C:\\Program Files (x86)\\Micro Focus\\LoadRunner\\include/SharedParameter.h" 1
 
@@ -1132,7 +1132,7 @@ extern VTCERR2  lrvtc_noop();
 
 
 
-# 2 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\350\362\356\343\356\342\373\345 \361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
+# 2 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
 
 # 1 "globals.h" 1
 
@@ -2589,14 +2589,14 @@ void
  
 
 
-# 3 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\350\362\356\343\356\342\373\345 \361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
+# 3 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
 
 # 1 "vuser_init.c" 1
 vuser_init()
 {
 	return 0;
 }
-# 4 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\350\362\356\343\356\342\373\345 \361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
+# 4 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
 
 # 1 "Action.c" 1
 Action()
@@ -2666,13 +2666,13 @@ web_reg_find("Text=Welcome to the Web Tours site",
 lr_end_transaction("login",2);
 lr_start_transaction("click_itinerary");
 	
-	web_reg_save_param("fl_id",
+	
+
+			
+web_reg_save_param("fl_id",
 		"LB=name=\"flightID\" value=\"",
 		"RB=\"",
 		"Ord=ALL",
-		"LAST");
-
-	web_reg_find("Text=Itinerary",
 		"LAST");
 
 	web_url("Itinerary Button", 
@@ -2685,28 +2685,31 @@ lr_start_transaction("click_itinerary");
 		"Mode=HTML", 
 		"LAST");
 		
-flight_id_num = atoi(lr_eval_string("{flightID_count}"));
+flight_id_num = atoi(lr_eval_string("{fl_id_count}"));
                      
                      
 lr_end_transaction("click_itinerary",2);
 
-	lr_think_time(7);
+	lr_think_time(5);
 
 	lr_start_transaction("Cancel");
-	
-	web_reg_save_param("fl_id",
-		"LB=name=\"flightID\" value=\"",
-		"RB=\"",
-		"Ord=ALL",
-		"LAST");
-
 	
 	web_reg_find("Fail=NotFound",
 		"Text=A total of",
 		"LAST");
+	
+ 
+ 
+ 
+ 
+ 
+
+	web_reg_save_param("flights_numbers",
+		"LB=<b>A total of",
+		"RB=scheduled flights.</font></b>",
+		"LAST");
 
 	
-
 	web_submit_form("web_submit_form",
 		"ITEMDATA", "Name=1", "Value=on", "ENDITEM",
 		"Name=removeFlights.x", "Value=67", "ENDITEM",
@@ -2716,7 +2719,7 @@ lr_end_transaction("click_itinerary",2);
 		"ENDITEM",
 		"LAST");
 	
-	if(atoi(lr_eval_string("{flightID_count}")) < flight_id_num){ 
+	if(atoi(lr_eval_string("{flights_numbers}")) < flight_id_num){ 
 		lr_output_message("itinerary deleted successfull");
 
 	} else lr_error_message("itinerary not deleted");
@@ -2782,12 +2785,12 @@ web_reg_find("Text=To make reservations,please enter your account information to
 
 	return 0;
 }
-# 5 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\350\362\356\343\356\342\373\345 \361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
+# 5 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
 
 # 1 "vuser_end.c" 1
 vuser_end()
 {
 	return 0;
 }
-# 6 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\350\362\356\343\356\342\373\345 \361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
+# 6 "c:\\users\\alex\\desktop\\ibs_\355\362\\lr\\5 \361\352\360\350\357\362\356\342\\\361\352\360\350\357\362\373\\uc4_delete\\\\combined_UC4_Delete.c" 2
 

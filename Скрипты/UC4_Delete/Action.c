@@ -65,13 +65,13 @@ web_reg_find("Text=Welcome to the Web Tours site",
 lr_end_transaction("login",LR_AUTO);
 lr_start_transaction("click_itinerary");
 	
-	web_reg_save_param("fl_id",
+	
+
+			
+web_reg_save_param("fl_id",
 		"LB=name=\"flightID\" value=\"",
 		"RB=\"",
 		"Ord=ALL",
-		LAST);
-
-	web_reg_find("Text=Itinerary",
 		LAST);
 
 	web_url("Itinerary Button", 
@@ -84,28 +84,31 @@ lr_start_transaction("click_itinerary");
 		"Mode=HTML", 
 		LAST);
 		
-flight_id_num = atoi(lr_eval_string("{flightID_count}"));
+flight_id_num = atoi(lr_eval_string("{fl_id_count}"));
                      
                      
 lr_end_transaction("click_itinerary",LR_AUTO);
 
-	lr_think_time(7);
+	lr_think_time(5);
 
 	lr_start_transaction("Cancel");
-	
-	web_reg_save_param("fl_id",
-		"LB=name=\"flightID\" value=\"",
-		"RB=\"",
-		"Ord=ALL",
-		LAST);
-
 	
 	web_reg_find("Fail=NotFound",
 		"Text=A total of",
 		LAST);
+	
+//	web_reg_save_param("fl_id",
+//		"LB=name=\"flightID\" value=\"",
+//		"RB=\"",
+//		"Ord=ALL",
+//		LAST);
+
+	web_reg_save_param("flights_numbers",
+		"LB=<b>A total of",
+		"RB=scheduled flights.</font></b>",
+		LAST);
 
 	
-
 	web_submit_form("web_submit_form",
 		ITEMDATA, "Name=1", "Value=on", ENDITEM,
 		"Name=removeFlights.x", "Value=67", ENDITEM,
@@ -115,7 +118,7 @@ lr_end_transaction("click_itinerary",LR_AUTO);
 		ENDITEM,
 		LAST);
 	
-	if(atoi(lr_eval_string("{flightID_count}")) < flight_id_num){ 
+	if(atoi(lr_eval_string("{flights_numbers}")) < flight_id_num){ 
 		lr_output_message("itinerary deleted successfull");
 
 	} else lr_error_message("itinerary not deleted");

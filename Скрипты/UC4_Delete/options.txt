@@ -2,8 +2,8 @@
 -DCCI
 -D_IDA_XL
 -DWINNT
--IC:\Users\alex\Desktop\IBS_НТ\LR\5 скриптов\Итоговые скрипты\UC4_Delete
+-IC:\Users\alex\Desktop\IBS_НТ\LR\5 скриптов\Скрипты\UC4_Delete
 -IC:\Program Files (x86)\Micro Focus\LoadRunner\include
--ec:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\uc4_delete\\logfile.log
-c:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\uc4_delete\\combined_UC4_Delete.c
-c:\users\alex\desktop\ibs_нт\lr\5 скриптов\итоговые скрипты\uc4_delete\\pre_cci.c
+-ec:\users\alex\desktop\ibs_нт\lr\5 скриптов\скрипты\uc4_delete\\logfile.log
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\скрипты\uc4_delete\\combined_UC4_Delete.c
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\скрипты\uc4_delete\\pre_cci.c
