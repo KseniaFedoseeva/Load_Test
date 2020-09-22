@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\alex\Desktop\IBS_НТ\LR\5 скриптов\Скрипты\UC2_Search_Tickets
+-IC:\Program Files (x86)\HPE\LoadRunner\include
+-ec:\users\alex\desktop\ibs_нт\lr\5 скриптов\скрипты\uc2_search_tickets\\logfile.log
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\скрипты\uc2_search_tickets\\combined_UC2_Search_Tickets.c
+c:\users\alex\desktop\ibs_нт\lr\5 скриптов\скрипты\uc2_search_tickets\\pre_cci.c

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>UC3_Buy_Ticket</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="UC3_Buy_Ticket.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="UC3_Buy_Ticket.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="combined_UC3_Buy_Ticket.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="127556822440.idx" Filter="1" />
+    <FileEntry Name="130951665440.idx" Filter="1" />
+    <FileEntry Name="150271491440.idx" Filter="1" />
+    <FileEntry Name="159116339440.idx" Filter="1" />
+    <FileEntry Name="159462494440.idx" Filter="1" />
+    <FileEntry Name="164805796440.idx" Filter="1" />
+    <FileEntry Name="165002420440.idx" Filter="1" />
+    <FileEntry Name="182924845440.idx" Filter="1" />
+    <FileEntry Name="192049496440.idx" Filter="1" />
+    <FileEntry Name="201893938440.idx" Filter="1" />
+    <FileEntry Name="223846883440.idx" Filter="1" />
+    <FileEntry Name="231935124440.idx" Filter="1" />
+    <FileEntry Name="232114053440.idx" Filter="1" />
+    <FileEntry Name="232441573440.idx" Filter="1" />
+    <FileEntry Name="26692385440.idx" Filter="1" />
+    <FileEntry Name="35775256440.idx" Filter="1" />
+    <FileEntry Name="41086872440.idx" Filter="1" />
+    <FileEntry Name="51129637440.idx" Filter="1" />
+    <FileEntry Name="52634069440.idx" Filter="1" />
+    <FileEntry Name="53094133440.idx" Filter="1" />
+    <FileEntry Name="62031391440.idx" Filter="1" />
+    <FileEntry Name="7623969440.idx" Filter="1" />
+    <FileEntry Name="86025003440.idx" Filter="1" />
+    <FileEntry Name="96594175440.idx" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="custom_body_variables.txt" Filter="1" />
+    <FileEntry Name="departDate.dat" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="login.dat" Filter="1" />
+    <FileEntry Name="lrw_custom_body.h" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrvf1Y.125.log" Filter="1" />
+    <FileEntry Name="mdrvUfk.145.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="password.dat" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="seat.dat" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="UC3_Buy_Ticket.c.pickle" Filter="1" />
+    <FileEntry Name="UC3_Buy_Ticket.ci" Filter="1" />
+    <FileEntry Name="UC3_Buy_Ticket.prm.bak" Filter="1" />
+    <FileEntry Name="UC3_Buy_Ticket.sdf" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

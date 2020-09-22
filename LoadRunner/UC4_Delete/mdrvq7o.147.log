@@ -1,0 +1,11 @@
+Start auto log messages stack - Iteration 10.	[MsgId: MMSG-10545]
+Action.c(118): web_submit_form("web_submit_form") started  	[MsgId: MMSG-26355]
+Action.c(118): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(118): Downloading resource "http://localhost:1080/cgi-bin/itinerary.pl" (specified by argument number 13)  	[MsgId: MMSG-26577]
+Action.c(118): Registered web_reg_find successful for "Text=A total of" (count=1)  	[MsgId: MMSG-26364]
+Action.c(118): Warning -26373: Parameter "flights_numbers" saved from a resource (URL="http://localhost:1080/cgi-bin/itinerary.pl")  	[MsgId: MWAR-26373]
+Action.c(118): web_submit_form("web_submit_form") highest severity level was "warning", 13813 body bytes, 512 header bytes, 47 chunking overhead bytes  	[MsgId: MMSG-26387]
+Action.c(130): Error: itinerary not deleted	[MsgId: MERR-17999]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

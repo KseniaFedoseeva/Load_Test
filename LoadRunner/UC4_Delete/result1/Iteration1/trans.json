@@ -1,0 +1,32 @@
+[
+    {
+        "transactionName": "goToSite",
+        "rawStartTime": 1600617435291,
+        "rawEndTime": 1600617444389
+    },
+    {
+        "transactionName": "login",
+        "rawStartTime": 1600617449393,
+        "rawEndTime": 1600617449746
+    },
+    {
+        "transactionName": "click itinerary",
+        "rawStartTime": 1600617449749,
+        "rawEndTime": 1600617450001
+    },
+    {
+        "transactionName": "Cancel",
+        "rawStartTime": 1600617455007,
+        "rawEndTime": 1600617455477
+    },
+    {
+        "transactionName": "logout",
+        "rawStartTime": 1600617455485,
+        "rawEndTime": 1600617455729
+    },
+    {
+        "transactionName": "UC4_Cancel_reserv",
+        "rawStartTime": 1600617435289,
+        "rawEndTime": 1600617455732
+    }
+]

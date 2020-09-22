@@ -1,0 +1,42 @@
+[
+    {
+        "transactionName": "goToSite",
+        "rawStartTime": 1600583871831,
+        "rawEndTime": 1600583877416
+    },
+    {
+        "transactionName": "Login",
+        "rawStartTime": 1600583882425,
+        "rawEndTime": 1600583882622
+    },
+    {
+        "transactionName": "click_flights",
+        "rawStartTime": 1600583887626,
+        "rawEndTime": 1600583892848
+    },
+    {
+        "transactionName": "fill_find_flight",
+        "rawStartTime": 1600583897853,
+        "rawEndTime": 1600583898053
+    },
+    {
+        "transactionName": "choose_flight",
+        "rawStartTime": 1600583903057,
+        "rawEndTime": 1600583903225
+    },
+    {
+        "transactionName": "fill_payment",
+        "rawStartTime": 1600583908230,
+        "rawEndTime": 1600583908385
+    },
+    {
+        "transactionName": "logout",
+        "rawStartTime": 1600583913390,
+        "rawEndTime": 1600583913575
+    },
+    {
+        "transactionName": "UC3_Buy_Ticket",
+        "rawStartTime": 1600583871829,
+        "rawEndTime": 1600583913578
+    }
+]

@@ -1,4 +1,0 @@
-"firstName=nina1&lastName=nina1&address1=Pushkina&address2=Perm&pass1=nina1+nina1&creditCard=89"
-"651475&expDate=6%2F31&oldCCOption=&numPassengers=1&seatType=Business&seatPref=Window&outboundF"
-"light=502%3B377%3B09%2F18%2F2020&advanceDiscount=0&returnFlight=&JSFormSubmit=off&.cgifields=s"
-"aveCC&buyFlights.x=11&buyFlights.y=6"

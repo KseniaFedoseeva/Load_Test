@@ -1,0 +1,161 @@
+Virtual User Script started at: 20.09.2020 11:36:46
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.55.0 for Windows 10; build 911 (июл 24 2017 19:46:00)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko  	[MsgId: MMSG-26988]
+Run-Time Settings file: "C:\Users\alex\Desktop\IBS_НТ\LR\5 скриптов\Скрипты\UC3_Buy_Ticket\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(2): Notify: Transaction "UC3_Buy_Ticket" started.
+Action.c(3): Notify: Transaction "goToSite" started.
+Action.c(22): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(22): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(28): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(28): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(31): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(31): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(31): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(31): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(31): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(31): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(31): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(31): Notify: Saving Parameter "userSession = 129654.41927906zzzQAQQpVQVzzzzHtAAVtpfQfVf".
+Action.c(31): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(31): Registered web_reg_find successful for "Text=Welcome to the Web Tours site" (count=1)  	[MsgId: MMSG-26364]
+Action.c(31): web_url("WebTours") was successful, 10078 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(41): Notify: Transaction "goToSite" ended with a "Pass" status (Duration: 5.8823 Wasted Time: 0.1194).
+Action.c(43): lr_think_time: 5.00 seconds.
+Action.c(47): Notify: Transaction "Login" started.
+Action.c(49): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(49): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(52): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(52): Notify: Parameter Substitution: parameter "userSession" =  "129654.41927906zzzQAQQpVQVzzzzHtAAVtpfQfVf"
+Action.c(52): Notify: Parameter Substitution: parameter "login" =  "nina"
+Action.c(52): Notify: Parameter Substitution: parameter "password" =  "dvde"
+Action.c(52): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(52): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(52): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(52): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(52): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(52): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(52): Registered web_reg_find successful for "Text=Welcome" (count=2)  	[MsgId: MMSG-26364]
+Action.c(52): web_submit_data("login.pl") was successful, 5779 body bytes, 2035 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(69): Notify: Transaction "Login" ended with a "Pass" status (Duration: 0,2243 Wasted Time: 0,0109).
+Action.c(71): lr_think_time: 5,00 seconds.
+Action.c(73): Notify: Transaction "click_flights" started.
+Action.c(75): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(75): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(78): web_url("Search Flights Button") started  	[MsgId: MMSG-26355]
+Action.c(78): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights" in "http://localhost:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MMSG-26574]
+Action.c(78): Detected non-resource "http://localhost:1080/cgi-bin/reservations.pl?page=welcome" in "http://localhost:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MMSG-26574]
+Action.c(78): Found resource "http://localhost:1080/WebTours/images/in_flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
+Action.c(78): Resource "http://localhost:1080/WebTours/images/itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(78): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
+Action.c(78): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(78): Found resource "http://localhost:1080/WebTours/images/button_next.gif" in HTML "http://localhost:1080/cgi-bin/reservations.pl?page=welcome"  	[MsgId: MMSG-26659]
+Action.c(78): Registered web_reg_find successful for "Text=Departure City" (count=1)  	[MsgId: MMSG-26364]
+Action.c(78): web_url("Search Flights Button") was successful, 8516 body bytes, 1620 header bytes, 43 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(88): lr_think_time: 5.00 seconds.
+Action.c(90): web_custom_request("FormDateUpdate.class") started  	[MsgId: MMSG-26355]
+Action.c(90): web_custom_request("FormDateUpdate.class") was successful, 0 body bytes, 309 header bytes  	[MsgId: MMSG-26386]
+Action.c(99): Notify: Transaction "click_flights" ended with a "Pass" status (Duration: 5.2806 Think Time: 5.0011 Wasted Time: 0.0252).
+Action.c(101): lr_think_time: 5.00 seconds.
+Action.c(103): Notify: Transaction "fill_find_flight" started.
+Action.c(120): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(120): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(126): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(126): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(132): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(138): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(138): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(142): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(142): Notify: Parameter Substitution: parameter "depart" =  "Denver"
+Action.c(142): Notify: Parameter Substitution: parameter "Arrive" =  "London"
+Action.c(142): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(146): web_submit_data("reservations.pl") started  	[MsgId: MMSG-26355]
+Action.c(146): Notify: Parameter Substitution: parameter "depart" =  "Denver"
+Action.c(146): Notify: Parameter Substitution: parameter "departDate" =  "09/20/2020"
+Action.c(146): Notify: Parameter Substitution: parameter "Arrive" =  "London"
+Action.c(146): Notify: Parameter Substitution: parameter "returnDate" =  "09/27/2020"
+Action.c(146): Notify: Parameter Substitution: parameter "seat" =  "Aisle"
+Action.c(146): Notify: Parameter Substitution: parameter "type" =  "First"
+Action.c(146): Notify: Saving Parameter "flight_id_1 = 020".
+Action.c(146): Notify: Saving Parameter "outboundFlight = 020;635;09/20/2020".
+Action.c(146): Notify: Saving Parameter "flight_time_1 = 8a".
+Action.c(146): Notify: Saving Parameter "flight_id_2 = 021".
+Action.c(146): Notify: Saving Parameter "flight_time_2 = 1p".
+Action.c(146): Notify: Saving Parameter "flight_id_3 = 022".
+Action.c(146): Notify: Saving Parameter "flight_time_3 = 5p".
+Action.c(146): Notify: Saving Parameter "flight_id_4 = 023".
+Action.c(146): Notify: Saving Parameter "flight_time_4 = 11p".
+Action.c(146): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(146): Notify: Saving Parameter "flight_id_count = 4".
+Action.c(146): Notify: Saving Parameter "flight_time_count = 4".
+Action.c(146): Registered web_reg_find successful for "Text=Flight departing from" (count=1)  	[MsgId: MMSG-26364]
+Action.c(146): Registered web_reg_find successful for "Text=<B>Denver</B> to <B>London</B>" (count=1)  	[MsgId: MMSG-26364]
+Action.c(146): web_submit_data("reservations.pl") was successful, 2437 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(172): Notify: Transaction "fill_find_flight" ended with a "Pass" status (Duration: 0.1401 Wasted Time: 0.0058).
+Action.c(174): lr_think_time: 5.00 seconds.
+Action.c(176): Notify: Transaction "choose_flight" started.
+Action.c(178): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(178): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Notify: Parameter Substitution: parameter "type" =  "First"
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(185): web_submit_data("reservations.pl_2") started  	[MsgId: MMSG-26355]
+Action.c(185): Notify: Parameter Substitution: parameter "outboundFlight" =  "020;635;09/20/2020"
+Action.c(185): Notify: Parameter Substitution: parameter "type" =  "First"
+Action.c(185): Notify: Parameter Substitution: parameter "seat" =  "Aisle"
+Action.c(185): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(185): Registered web_reg_find successful for "Text=Flight Reservation" (count=1)  	[MsgId: MMSG-26364]
+Action.c(185): Registered web_reg_find successful for "Text=First" (count=2)  	[MsgId: MMSG-26364]
+Action.c(185): web_submit_data("reservations.pl_2") was successful, 2699 body bytes, 255 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(203): Notify: Transaction "choose_flight" ended with a "Pass" status (Duration: 0.1204 Wasted Time: 0.0045).
+Action.c(205): lr_think_time: 5.00 seconds.
+Action.c(207): Notify: Transaction "fill_payment" started.
+Action.c(212): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(212): Notify: Parameter Substitution: parameter "departDate" =  "09/20/2020"
+Action.c(212): Notify: Parameter Substitution: parameter "flight_time_3" =  "5p"
+Action.c(212): Notify: Parameter Substitution: parameter "flight_id_3" =  "022"
+Action.c(212): Notify: Parameter Substitution: parameter "depart" =  "Denver"
+Action.c(212): Notify: Parameter Substitution: parameter "Arrive" =  "London"
+Action.c(212): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(215): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(215): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(219): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(219): Notify: Parameter Substitution: parameter "type" =  "First"
+Action.c(219): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(222): web_submit_data("reservations.pl_3") started  	[MsgId: MMSG-26355]
+Action.c(222): Notify: Parameter Substitution: parameter "login" =  "nina"
+Action.c(222): Notify: Parameter Substitution: parameter "login" =  "nina"
+Action.c(222): Notify: Parameter Substitution: parameter "address1" =  "Lenina"
+Action.c(222): Notify: Parameter Substitution: parameter "address2" =  "Moscow"
+Action.c(222): Notify: Parameter Substitution: parameter "login" =  "nina"
+Action.c(222): Notify: Parameter Substitution: parameter "login" =  "nina"
+Action.c(222): Notify: Parameter Substitution: parameter "credit" =  "12334556"
+Action.c(222): Notify: Parameter Substitution: parameter "randomMonth" =  "5"
+Action.c(222): Notify: Parameter Substitution: parameter "randomYear" =  "11"
+Action.c(222): Notify: Parameter Substitution: parameter "type" =  "First"
+Action.c(222): Notify: Parameter Substitution: parameter "seat" =  "Aisle"
+Action.c(222): Warning: The string 'outboundFlight_3' with parameter delimiters is not a parameter.
+Action.c(222): Found resource "http://localhost:1080/WebTours/images/bookanother.gif" in HTML "http://localhost:1080/cgi-bin/reservations.pl"  	[MsgId: MMSG-26659]
+Action.c(222): Error -26366: "Text=09/20/2020 :  5pm : Flight 022 leaves Denver  for London" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(222): Registered web_reg_find successful for "Text=Reservation Made!" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): Registered web_reg_find successful for "Text= A First Class ticket" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_submit_data("reservations.pl_3") highest severity level was "ERROR", 3274 body bytes, 660 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26387]
+Action.c(222): Notify: Transaction "fill_payment" ended with a "Fail" status (Duration: 0.1703 Wasted Time: 0.0055).
+Action.c(222): Notify: Transaction "fill_payment" has 1 error message(s).
+Action.c(222): Notify: The 1st error message associated with transaction "fill_payment" is "Error -26366: "Text=09/20/2020 :  5pm : Flight 022 leaves Denver  for London" not found for web_reg_find"
+Action.c(222): Notify: Transaction "UC3_Buy_Ticket" ended with a "Fail" status (Duration: 36.8453 Think Time: 30.0003 Wasted Time: 0.1712).
+Action.c(222): Notify: Transaction "UC3_Buy_Ticket" has 1 error message(s).
+Action.c(222): Notify: The 1st error message associated with transaction "UC3_Buy_Ticket" is "Error -26366: "Text=09/20/2020 :  5pm : Flight 022 leaves Denver  for London" not found for web_reg_find"
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
